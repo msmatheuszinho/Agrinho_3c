@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivo Direto | Fortalecendo a Agricultura Familiar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <div class="accessibility-buttons">
+                <button id="btn-font-decrease" aria-label="Diminuir texto">A-</button>
+                <button id="btn-font-increase" aria-label="Aumentar texto">A+</button>
+                <button id="btn-contrast" aria-label="Alternar Alto Contraste"><i class="fas fa-adjust"></i> Alto Contraste</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>CultivoDireto</span>
+            </div>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#depoimentos">Histórias de Sucesso</a>
+                <a href="#perguntas">Dúvidas Frequentes</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#cadastro" class="btn btn-primary">Cadastrar Minha Propriedade</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Do Campo para a Mesa</span>
+                <h1>Valorize sua terra. Multiplique seus ganhos com simplicidade.</h1>
+                <p>Conectamos sua produção familiar diretamente a compradores da sua região. Sem intermediários, sem taxas abusivas e com uma ferramenta feita para o seu dia a dia no campo.</p>
+                <div class="hero-actions">
+                    <a href="#cadastro" class="btn btn-primary btn-lg">Começar a Vender Agora</a>
+                    <a href="#beneficios" class="btn btn-secondary btn-lg">Saber Como Funciona</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item"><i class="fas fa-check-circle"></i> Mais de 12.000 produtores ativos</div>
+                    <div class="trust-item"><i class="fas fa-shield-alt"></i> Pagamento 100% garantido</div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-card">
+                    <div class="card-stat">
+                        <span class="stat-number">+45%</span>
+                        <span class="stat-label">De lucro médio para o produtor</span>
+                    </div>
+                    <div class="card-icon-box">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Feito por quem entende a rotina do produtor rural</h2>
+                <p>Uma interface limpa, com botões grandes e navegação prática para você focar no que realmente importa: a sua colheita.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Fácil de usar no celular</h3>
+                    <p>Funciona perfeitamente mesmo em conexões mais lentas. Cadastre seus produtos com apenas três cliques.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Sem intermediários</h3>
+                    <p>Negocie o preço justo direto com feirantes, supermercados e consumidores finais da sua região.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-wallet"></i></div>
+                    <h3>Recebimento descomplicado</h3>
+                    <p>Dinheiro cai direto na sua conta bancária ou via Pix logo após a confirmação da entrega do lote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quem usa, aprova e recomenda</h2>
+                <p>Histórias reais de famílias que transformaram a gestão e a venda de suas colheitas.</p>
+            </div>
+            <div class="carousel-container">
+                <div id="carousel-track" class="carousel-track">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" aria-label="Depoimento anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button id="carousel-next" aria-label="Próximo depoimento"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="perguntas" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Esclareça suas principais dúvidas sobre o funcionamento do CultivoDireto.</p>
+            </div>
+            <div id="faq-accordion" class="accordion-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Pronto para valorizar o fruto do seu trabalho?</h2>
+                <p>O cadastro leva menos de 2 minutos. Comece hoje mesmo a receber pedidos diretos para a sua produção familiar.</p>
+                <div class="cta-guarantee">
+                    <i class="fas fa-info-circle"></i> <span>Acesso 100% gratuito para o pequeno produtor rural.</span>
+                </div>
+            </div>
+            <div class="cta-form-box">
+                <form id="lead-form" class="cta-form" onsubmit="event.preventDefault(); alert('Cadastro simulado com sucesso!');">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome Completo</label>
+                        <input type="text" id="nome" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Número do WhatsApp</label>
+                        <input type="tel" id="whatsapp" required placeholder="Ex: (11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="regiao">Sua Cidade ou Região</label>
+                        <input type="text" id="regiao" required placeholder="Ex: Petrolina - PE">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Quero Cadastrar Meu Cultivo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>CultivoDireto</span>
+                </div>
+                <p>Tecnologia simples a serviço do pequeno e médio produtor rural brasileiro.</p>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 CultivoDireto. Todos os direitos reservados. Desenvolvimento de Alta Fidelidade.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
